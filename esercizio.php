@@ -29,14 +29,15 @@ class Movie {
 
 $filmUno = new Movie('Il signore degli anelli', 'fantasy');
 //var_dump($filmUno);
-echo $filmUno->titolo .' ' .$filmUno->genere .'<br>';
+echo $filmUno->titolo .' , ' .'genere: ' .$filmUno->genere .'<br>';
 
 $filmDue = new Movie('John Wick', 'azione');
 //var_dump($filmDue);
-echo $filmDue->titolo .' ' .$filmDue->genere .'<br>';
+echo $filmDue->titolo .' , ' .'genere: ' .$filmDue->genere .'<br>';
 
 
 
 $prezzoBiglietto = $filmUno->calcolaSconto('15');
 $prezzoBiglietto2 = $filmUno->calcolaSconto('8');
-echo $prezzoBiglietto .'euro' .'<br>' .$prezzoBiglietto2 .'euro';
+echo 'Biglietto over: ' .'euro ' .$prezzoBiglietto  .'<br>';
+echo 'Biglietto under 14: ' .'euro ' .$prezzoBiglietto2;
